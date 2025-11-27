@@ -1,12 +1,12 @@
 # Product CRUD API Project 🚀
 
-This is a **Spring Boot REST API** project designed to manage product data. The project integrates with **MySQL** as the database and provides **JWT-based authentication** for secure API access.
+This is a **Spring Boot REST API** project designed to manage product data. The project integrates with **PostgreSQL** as the database and provides **JWT-based authentication** for secure API access.
 
 ## Features 🛠️
 
 - **CRUD operations** for product management
 - **JWT-based authentication** for secure API access 🔐
-- **MySQL** as the database backend 💾
+- **PostgreSQL** as the database backend 💾
 - **Spring Data JPA** for interacting with the database
 - **Spring Security** for authentication and authorization 🛡️
 
@@ -16,53 +16,52 @@ Before running this project, ensure you have the following installed:
 
 - **Java 21** (or higher) ☕
 - **Maven** for building the project ⚙️
-- **MySQL** installed and running 🐬
+- **PostgreSQL** installed and running 🐬
 
 ## GitHub Repository 🔗
 
 You can find the project repository here:  
-[Product-CRUD-API](https://github.com/harshkhandelwal459/Product-CRUD-API)
+[Product-CRUD-API](https://github.com/oneminutestech-maker/AssignmentProductAPI.git)
 
 ### Clone the Repository
 
 1. **Using SSH:**
 
     ```bash
-    git clone git@github.com:harshkhandelwal459/Product-CRUD-API.git
+    git clone git@github.com:oneminutestech-maker/AssignmentProductAPI.git
     ```
 2. **Using HTTPS:**
 
     ```bash
-    git clone https://github.com/harshkhandelwal459/Product-CRUD-API.git
+    git clone https://github.com/oneminutestech-maker/AssignmentProductAPI.git
     ```
 
 ### Setting Up the Database 🗄️
 
-The project uses **MySQL** for data storage. Follow these steps to set up the database:
+The project uses **PostgreSQL** for data storage. Follow these steps to set up the database:
 
 1. **Create the Database**  
-   Run the following SQL command in MySQL to create the `product_db` database:
+   Run the following SQL command in PostgreSQL to create the `Product_DB` database:
 
     ```sql
-    CREATE DATABASE product_db;
+    CREATE DATABASE Product_DB;
     ```
 
 2. **Update `application.properties`**  
    In the `src/main/resources/application.properties` file, make sure you configure the **database connection** details correctly:
 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/product_db
+    spring.datasource.url=jdbc:postgresql://localhost:3306/Product_DB
     spring.datasource.username=root
     spring.datasource.password=your_password
     spring.jpa.hibernate.ddl-auto=update
-    spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
     ```
 
-   > Replace `your_password` with your MySQL root password (or another MySQL user and password if applicable).
+   > Replace `your_password` with your PostgreSQL root password (or another PostgreSQL user and password if applicable).
 
 ## Running the Project 🏃‍♂️
 
-Once the MySQL database is set up, you can run the project using Maven.
+Once the PostgreSQL database is set up, you can run the project using Maven.
 
 ### Steps to run the project:
 
@@ -75,12 +74,6 @@ Once the MySQL database is set up, you can run the project using Maven.
     ```
 
 3. The application should now be running at `http://localhost:8080`.
-
----
-
-## Note: No Docker Usage 🐳
-
-This project does **not use Docker**. It assumes that you have MySQL installed and running locally on your machine.
 
 ---
 
@@ -100,5 +93,3 @@ This project does **not use Docker**. It assumes that you have MySQL installed a
 - **API Endpoints**: Check the project documentation or Swagger UI for available API endpoints once the application is running.
 
 ---
-
-Let me know if you need further adjustments! The icons should help make the `README.md` more visually appealing and easier to follow. 😊
